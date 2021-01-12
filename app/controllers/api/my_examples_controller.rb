@@ -14,4 +14,10 @@ class Api::MyExamplesController < ApplicationController
     end
     render "lotto.json.jb"
   end
+
+  def count_method
+    @count = 0
+    @count += 1
+    render "count.json.jb"
+  end
 end
